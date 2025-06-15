@@ -29,7 +29,6 @@ hello-world-java/
 
 - Java JDK 8 or higher
 - Maven 3.6+
-- IDE (e.g., IntelliJ IDEA, Eclipse, VS Code)
 
 ---
 
@@ -38,7 +37,7 @@ hello-world-java/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/maven-standalone-project.git
+git clone https://github.com/Rushi-Technologies/hello-world-java.git
 cd hello-world-java
 ```
 
