@@ -31,14 +31,28 @@ class HelloWorldTest {
                 "Returned date should be now or slightly after the current date");
     }
 
+    @Test
+    void testGetNameShouldReturnCorrectName() {
+        String expectedName = "Rushi Technologies";
+        String actualName = HelloWorldTestWrapper.getName();
+        assertEquals(expectedName, actualName, "The name should match the expected value");
+    }
+
+
     /**
      * Since getLocalCurrentDate is private in HelloWorld, we create a simple wrapper class
      * in test scope to access it for testing purposes.
      * Alternatively, you could make the method package-private for test access.
      */
     static class HelloWorldTestWrapper extends HelloWorld {
+
         public static Date getLocalCurrentDate() {
             return HelloWorld.getLocalCurrentDateTestable();
         }
+
+         public static String getName (){
+            return HelloWorld.getName();
+        }
+        
     }
 }
